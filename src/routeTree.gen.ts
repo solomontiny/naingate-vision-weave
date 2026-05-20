@@ -10,7 +10,9 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as SiteRouteImport } from './routes/_site'
+import { Route as AdminIndexRouteImport } from './routes/admin.index'
 import { Route as SiteIndexRouteImport } from './routes/_site.index'
+import { Route as AdminDashboardRouteImport } from './routes/admin.dashboard'
 import { Route as SiteSponsorshipRouteImport } from './routes/_site.sponsorship'
 import { Route as SiteProductsRouteImport } from './routes/_site.products'
 import { Route as SitePartnersRouteImport } from './routes/_site.partners'
@@ -24,10 +26,20 @@ const SiteRoute = SiteRouteImport.update({
   id: '/_site',
   getParentRoute: () => rootRouteImport,
 } as any)
+const AdminIndexRoute = AdminIndexRouteImport.update({
+  id: '/admin/',
+  path: '/admin/',
+  getParentRoute: () => rootRouteImport,
+} as any)
 const SiteIndexRoute = SiteIndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => SiteRoute,
+} as any)
+const AdminDashboardRoute = AdminDashboardRouteImport.update({
+  id: '/admin/dashboard',
+  path: '/admin/dashboard',
+  getParentRoute: () => rootRouteImport,
 } as any)
 const SiteSponsorshipRoute = SiteSponsorshipRouteImport.update({
   id: '/sponsorship',
@@ -80,6 +92,8 @@ export interface FileRoutesByFullPath {
   '/partners': typeof SitePartnersRoute
   '/products': typeof SiteProductsRoute
   '/sponsorship': typeof SiteSponsorshipRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRoutesByTo {
   '/about': typeof SiteAboutRoute
@@ -90,7 +104,9 @@ export interface FileRoutesByTo {
   '/partners': typeof SitePartnersRoute
   '/products': typeof SiteProductsRoute
   '/sponsorship': typeof SiteSponsorshipRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
   '/': typeof SiteIndexRoute
+  '/admin': typeof AdminIndexRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
@@ -103,7 +119,9 @@ export interface FileRoutesById {
   '/_site/partners': typeof SitePartnersRoute
   '/_site/products': typeof SiteProductsRoute
   '/_site/sponsorship': typeof SiteSponsorshipRoute
+  '/admin/dashboard': typeof AdminDashboardRoute
   '/_site/': typeof SiteIndexRoute
+  '/admin/': typeof AdminIndexRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
@@ -117,6 +135,8 @@ export interface FileRouteTypes {
     | '/partners'
     | '/products'
     | '/sponsorship'
+    | '/admin/dashboard'
+    | '/admin/'
   fileRoutesByTo: FileRoutesByTo
   to:
     | '/about'
@@ -127,7 +147,9 @@ export interface FileRouteTypes {
     | '/partners'
     | '/products'
     | '/sponsorship'
+    | '/admin/dashboard'
     | '/'
+    | '/admin'
   id:
     | '__root__'
     | '/_site'
@@ -139,11 +161,15 @@ export interface FileRouteTypes {
     | '/_site/partners'
     | '/_site/products'
     | '/_site/sponsorship'
+    | '/admin/dashboard'
     | '/_site/'
+    | '/admin/'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   SiteRoute: typeof SiteRouteWithChildren
+  AdminDashboardRoute: typeof AdminDashboardRoute
+  AdminIndexRoute: typeof AdminIndexRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -155,12 +181,26 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof SiteRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/admin/': {
+      id: '/admin/'
+      path: '/admin'
+      fullPath: '/admin/'
+      preLoaderRoute: typeof AdminIndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
     '/_site/': {
       id: '/_site/'
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof SiteIndexRouteImport
       parentRoute: typeof SiteRoute
+    }
+    '/admin/dashboard': {
+      id: '/admin/dashboard'
+      path: '/admin/dashboard'
+      fullPath: '/admin/dashboard'
+      preLoaderRoute: typeof AdminDashboardRouteImport
+      parentRoute: typeof rootRouteImport
     }
     '/_site/sponsorship': {
       id: '/_site/sponsorship'
@@ -249,6 +289,8 @@ const SiteRouteWithChildren = SiteRoute._addFileChildren(SiteRouteChildren)
 
 const rootRouteChildren: RootRouteChildren = {
   SiteRoute: SiteRouteWithChildren,
+  AdminDashboardRoute: AdminDashboardRoute,
+  AdminIndexRoute: AdminIndexRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
