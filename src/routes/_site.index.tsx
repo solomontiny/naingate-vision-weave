@@ -10,9 +10,9 @@ const iconMap = { Car, HardHat, Building2, Sprout, ShieldAlert, HeartPulse, Bank
 export const Route = createFileRoute("/_site/")({
   head: () => ({
     meta: [
-      { title: "Naingate Insurance — Premium cover for Nigeria's modern economy" },
+      { title: "Naingate Insurance Brokers — Premium cover for Nigeria's modern economy" },
       { name: "description", content: "Motor, property, engineering, agric, life and special-risk insurance from Naingate — a Digital Space Capital company." },
-      { property: "og:title", content: "Naingate Insurance" },
+      { property: "og:title", content: "Naingate Insurance Brokers" },
       { property: "og:description", content: "Premium cover engineered for the modern economy." },
     ],
     links: [{ rel: "canonical", href: "/" }],

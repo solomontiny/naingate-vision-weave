@@ -8,7 +8,7 @@ import { site } from "@/lib/site";
 export const Route = createFileRoute("/_site/contact")({
   head: () => ({
     meta: [
-      { title: "Contact — Naingate Insurance" },
+      { title: "Contact — Naingate Insurance Brokers" },
       { name: "description", content: "Speak with a Naingate advisor. Get a quote, file a claim, or partner with us." },
       { property: "og:title", content: "Contact Naingate" },
       { property: "og:description", content: "Speak with an advisor today." },

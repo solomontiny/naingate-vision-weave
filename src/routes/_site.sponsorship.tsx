@@ -7,7 +7,7 @@ import { Link } from "@tanstack/react-router";
 export const Route = createFileRoute("/_site/sponsorship")({
   head: () => ({
     meta: [
-      { title: "Sponsorship — Naingate Insurance" },
+      { title: "Sponsorship — Naingate Insurance Brokers" },
       { name: "description", content: "Naingate sponsors initiatives in sport, culture and community that align with our values of resilience, trust and ambition." },
       { property: "og:title", content: "Naingate Sponsorship" },
       { property: "og:description", content: "Partnering with the people, events and causes that move Nigeria forward." },

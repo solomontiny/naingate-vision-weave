@@ -1,5 +1,5 @@
 export const site = {
-  name: "Naingate Insurance",
+  name: "Naingate Insurance Brokers",
   parent: "Digital Space Capital",
   tagline: "Protection engineered for the modern economy.",
   email: "info@naingate.com",
@@ -111,7 +111,7 @@ export const faqs = [
   { q: "Can I manage my policy online?", a: "Yes. Our customer portal lets you view policies, download certificates, pay premiums and track claims in real time." },
   { q: "How are premiums calculated?", a: "Premiums reflect the sum insured, risk profile, claims history and policy term. We provide transparent quotes with no hidden charges." },
   { q: "Do you offer corporate and group cover?", a: "Absolutely. We design bespoke programs for SMEs, multinationals and government MDAs across all product lines." },
-  { q: "Is Naingate licensed and regulated?", a: "Naingate Insurance operates under the regulatory framework governing Nigerian insurers and is a subsidiary of Digital Space Capital." },
+  { q: "Is Naingate licensed and regulated?", a: "Naingate Insurance Brokers operates under the regulatory framework governing Nigerian insurers and is a subsidiary of Digital Space Capital." },
 ];
 
 export const team = [

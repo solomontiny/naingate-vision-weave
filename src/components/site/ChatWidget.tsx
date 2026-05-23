@@ -12,7 +12,7 @@ const STORAGE_KEY = "naingate.chat.v1";
 const WELCOME: Msg = {
   role: "assistant",
   content:
-    "Hi 👋 I'm Nai, your Naingate Insurance assistant. Ask me about products, claims, pricing or sponsorship — I'm here 24/7.",
+    "Hi 👋 I'm Nai, your Naingate Insurance Brokers assistant. Ask me about products, claims, pricing or sponsorship — I'm here 24/7.",
   ts: Date.now(),
 };
 
