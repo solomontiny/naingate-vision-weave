@@ -1,6 +1,7 @@
 import { Outlet } from "@tanstack/react-router";
 import { Header } from "./Header";
 import { Footer } from "./Footer";
+import { ChatWidget } from "./ChatWidget";
 
 export function SiteLayout() {
   return (
@@ -8,6 +9,7 @@ export function SiteLayout() {
       <Header />
       <main className="flex-1"><Outlet /></main>
       <Footer />
+      <ChatWidget />
     </div>
   );
 }
