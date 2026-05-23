@@ -4,7 +4,7 @@ export const site = {
   tagline: "Protection engineered for the modern economy.",
   email: "info@naingate.com",
   phone: "+234 (0) 700 NAINGATE",
-  address: "Plot 12, Adeola Odeku Street, Victoria Island, Lagos, Nigeria",
+  address: "5a Adekunle Lawal Street, off Oba Adeyinka Oyekan Road, Ikoyi, Lagos, Nigeria",
   social: {
     linkedin: "#",
     twitter: "#",
