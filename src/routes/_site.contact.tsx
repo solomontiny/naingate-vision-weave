@@ -97,7 +97,7 @@ function ContactPage() {
                   <div className="inline-flex h-12 w-12 rounded-full bg-navy text-gold items-center justify-center mb-3">
                     <MapPin className="h-5 w-5" />
                   </div>
-                  <div className="font-display text-lg text-navy">Victoria Island, Lagos</div>
+                  <div className="font-display text-lg text-navy">Ikoyi, Lagos</div>
                   <div className="text-xs text-muted-foreground mt-1">Map preview</div>
                 </div>
               </div>
