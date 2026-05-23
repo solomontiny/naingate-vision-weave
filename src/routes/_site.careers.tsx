@@ -7,7 +7,7 @@ import { jobs } from "@/lib/site";
 export const Route = createFileRoute("/_site/careers")({
   head: () => ({
     meta: [
-      { title: "Careers — Naingate Insurance" },
+      { title: "Careers — Naingate Insurance Brokers" },
       { name: "description", content: "Join Naingate. Build the modern insurer for Africa's most ambitious economy." },
       { property: "og:title", content: "Careers at Naingate" },
       { property: "og:description", content: "We're hiring underwriters, claims operators, engineers and customer-experience leaders." },

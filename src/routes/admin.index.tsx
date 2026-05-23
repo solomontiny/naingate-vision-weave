@@ -40,7 +40,7 @@ function AdminLogin() {
               Manage policies, claims, sponsorship enquiries and customer messages from a single dashboard.
             </p>
           </div>
-          <div className="text-xs text-navy-foreground/50">© {new Date().getFullYear()} Naingate Insurance</div>
+          <div className="text-xs text-navy-foreground/50">© {new Date().getFullYear()} Naingate Insurance Brokers</div>
         </div>
       </div>
 

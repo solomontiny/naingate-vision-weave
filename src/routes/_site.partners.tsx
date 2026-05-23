@@ -7,7 +7,7 @@ import { partners } from "@/lib/site";
 export const Route = createFileRoute("/_site/partners")({
   head: () => ({
     meta: [
-      { title: "Partners — Naingate Insurance" },
+      { title: "Partners — Naingate Insurance Brokers" },
       { name: "description", content: "Naingate partners with leading banks, reinsurers, brokers and corporates across Africa and beyond." },
       { property: "og:title", content: "Naingate Partners" },
       { property: "og:description", content: "Built on a network of trusted reinsurers, banks, brokers and corporate clients." },

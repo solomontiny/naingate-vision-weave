@@ -7,7 +7,7 @@ import { CTABanner } from "@/components/site/CTA";
 export const Route = createFileRoute("/_site/claims")({
   head: () => ({
     meta: [
-      { title: "Claims — Naingate Insurance" },
+      { title: "Claims — Naingate Insurance Brokers" },
       { name: "description", content: "Four simple steps. An average settlement in 48 hours. Here's how the Naingate claims process works." },
       { property: "og:title", content: "Naingate Claims" },
       { property: "og:description", content: "Average claim settled in 48 hours." },

@@ -8,9 +8,9 @@ import { Compass, Target, Eye } from "lucide-react";
 export const Route = createFileRoute("/_site/about")({
   head: () => ({
     meta: [
-      { title: "About — Naingate Insurance" },
-      { name: "description", content: "Naingate Insurance is a subsidiary of Digital Space Capital, building a modern, data-driven insurer for Nigeria and beyond." },
-      { property: "og:title", content: "About Naingate Insurance" },
+      { title: "About — Naingate Insurance Brokers" },
+      { name: "description", content: "Naingate Insurance Brokers is a subsidiary of Digital Space Capital, building a modern, data-driven insurer for Nigeria and beyond." },
+      { property: "og:title", content: "About Naingate Insurance Brokers" },
       { property: "og:description", content: "A modern insurer for the African economy, backed by Digital Space Capital." },
     ],
     links: [{ rel: "canonical", href: "/about" }],
@@ -24,7 +24,7 @@ function AboutPage() {
       <PageHero
         eyebrow="About us"
         title="A modern insurer for an ambitious economy."
-        description="Naingate Insurance was built to close the protection gap for Nigeria's businesses and households — combining traditional underwriting craft with digital-first operations."
+        description="Naingate Insurance Brokers was built to close the protection gap for Nigeria's businesses and households — combining traditional underwriting craft with digital-first operations."
       />
 
       <Section>
@@ -33,7 +33,7 @@ function AboutPage() {
             <div className="text-xs uppercase tracking-[0.2em] text-gold mb-3">Our story</div>
             <h2 className="text-3xl sm:text-4xl font-semibold text-navy">From a holding company's vision to a national insurer.</h2>
             <div className="mt-6 space-y-4 text-muted-foreground">
-              <p>Naingate Insurance was incorporated as the insurance arm of Digital Space Capital — a diversified holding group with interests in financial services, technology and infrastructure.</p>
+              <p>Naingate Insurance Brokers was incorporated as the insurance arm of Digital Space Capital — a diversified holding group with interests in financial services, technology and infrastructure.</p>
               <p>We launched with a simple thesis: Nigerians deserve insurance that pays. Not a brochure full of promises, but cover that responds within days when life and business demand it.</p>
               <p>Today we serve thousands of policyholders across motor, property, engineering, agric, marine, energy, life and liability lines — backed by reinsurance partnerships with global names and a claims engine designed for speed.</p>
             </div>

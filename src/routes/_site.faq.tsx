@@ -7,8 +7,8 @@ import { faqs } from "@/lib/site";
 export const Route = createFileRoute("/_site/faq")({
   head: () => ({
     meta: [
-      { title: "FAQ — Naingate Insurance" },
-      { name: "description", content: "Answers to the most common questions about Naingate Insurance policies, claims and account management." },
+      { title: "FAQ — Naingate Insurance Brokers" },
+      { name: "description", content: "Answers to the most common questions about Naingate Insurance Brokers policies, claims and account management." },
       { property: "og:title", content: "Naingate FAQ" },
       { property: "og:description", content: "Common questions about cover, claims and accounts — answered." },
     ],
