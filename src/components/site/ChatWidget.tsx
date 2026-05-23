@@ -172,20 +172,19 @@ export function ChatWidget() {
               )}
             </div>
 
-            {/* Quick replies */}
-            {messages.length <= 2 && !loading && (
-              <div className="px-3 pb-2 flex flex-wrap gap-1.5">
-                {QUICK_REPLIES.map((q) => (
-                  <button
-                    key={q.label}
-                    onClick={() => sendMessage(q.text)}
-                    className="text-xs px-3 py-1.5 rounded-full border border-border bg-background hover:bg-muted transition"
-                  >
-                    {q.label}
-                  </button>
-                ))}
-              </div>
-            )}
+            {/* Quick replies — always visible */}
+            <div className="px-3 pt-2 pb-1 border-t border-border bg-background/60 flex gap-1.5 overflow-x-auto scrollbar-none">
+              {QUICK_REPLIES.map((q) => (
+                <button
+                  key={q.label}
+                  onClick={() => sendMessage(q.text)}
+                  disabled={loading}
+                  className="shrink-0 text-xs px-3 py-1.5 rounded-full border border-border bg-background hover:bg-muted hover:border-gold/50 transition disabled:opacity-50"
+                >
+                  {q.label}
+                </button>
+              ))}
+            </div>
 
             {/* Input */}
             <form
